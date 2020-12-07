@@ -3,3 +3,34 @@
 + Restricciones (Negocio y técnicos)
 + Atributos de calidad.
 + Motivadores de negocio. (Resultados deseados del negocio y actividades necesarias para lograrlo)
+
+* en que se siente comodo del equipo (curva de aprendizaje)
+* tipos de licenciamiento. (hay algunas q se miden segun el cpu o virtual cpu)
+* eestrategia de producto (si se necesitara multiples lineas de algo, redespliegue)
+* scriptabilidad (por automatizacion)
+* desplegabilidad (por ejemplo microservicios, se pueden desplegar separado, eresuleve problemas humanos porque menos conflictos)
+* pricing.
+
+
+Varnish:
+-> contenido estatico : assets.
+-> contenido dinamico: si se cachea llamados rest, si se cachea el resultado y se vuelve escribir hay problema de consistencia, predictabilidad de la cache.. no necesariamente hay tabla de reglas.. si un dato se demora segun x cantdad de tiempo.. invalido... no, hay datos q pueden cambiar tres horas o menos.
+cual es el patron de lectura?
+cual es el patron de cambio?
+el problema con los cambios, es la predictibilidad.
+cual es el ciclo de vida de la cache?
+cachear 
+
+porque no en app service?
+es un paas, quitan customizacion, ellos asumen el runtime, 
+
+**MODELOS DE CONSISTENCIA**
+**TEORIa de sistemas distribuidos**
+**Encontrar una curva de costos,
+desplegar varnish y autoescalarlo, escalamiento horizontal simple? varnish tiene cluster, o tienen diferentes instancias?
+analizar costos vs, opciones de azure....
+hay assumptions q va a tocar hacer.. por ejemplo.. front door por GB y varnish por numero de nodos...
+Analizar cuanto gb tendria por instancia de varnish.. habra algun punto de equilibrio entre estos 2?
+estos -> Varnish / front door / CDN.
+
+
