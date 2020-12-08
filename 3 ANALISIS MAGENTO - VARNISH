@@ -3,6 +3,26 @@
 Comparando precios entre Varnish / front door / CDN.
 
 * Varnish:
+https://www.varnish-software.com/pricing/
+https://azuremarketplace.microsoft.com/en-us/marketplace/apps/varnish.varnish-cache_?tab=PlansAndPrice
+https://azuremarketplace.microsoft.com/en-ca/marketplace/apps/varnish.varnish-enterprise?tab=PlansAndPrice
+https://azuremarketplace.microsoft.com/en-ca/marketplace/apps/cognosys.varnish-on-centos?tab=PlansAndPrice
+https://docs.varnish-software.com/varnish-plus-cloud/getting-started/azure/
+https://info.varnish-software.com/blog/varnish-plus-or-varnish-plus-cloud
+
+
+Azure CDN:
+https://azure.microsoft.com/en-us/pricing/details/cdn/?&ef_id=CjwKCAiAwrf-BRA9EiwAUWwKXifOrpQBRcZwVRn5k5DnLQGGaejHRFevor_zCZJZS6kMMe22IawnGBoCAWAQAvD_BwE:G:s&OCID=AID2100025_SEM_CjwKCAiAwrf-BRA9EiwAUWwKXifOrpQBRcZwVRn5k5DnLQGGaejHRFevor_zCZJZS6kMMe22IawnGBoCAWAQAvD_BwE:G:s&dclid=CO3ama2wve0CFa3rKAUd4HkP1Q
+https://azure.microsoft.com/en-us/pricing/details/cdn/
+https://docs.microsoft.com/en-us/azure/cdn/cdn-billing
+https://www.predictiveanalyticstoday.com/microsoft-azure-cdn/
+
+Azure front door
+https://azure.microsoft.com/en-us/pricing/details/frontdoor/
+https://azure.microsoft.com/es-es/pricing/details/frontdoor/
+https://azure.microsoft.com/en-us/services/frontdoor/#pricing
 
 
 
+Azure CDN vs Varnish:
+https://www.g2.com/compare/microsoft-azure-cdn-vs-varnish-software
