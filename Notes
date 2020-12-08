@@ -11,10 +11,13 @@
 + pricing.
 
 2. Evaluando Magento:
-2.1 Varnish:
+https://devdocs.magento.com/guides/v2.4/performance-best-practices/reference-architecture.html#storage
 
--> contenido estatico : assets.
--> contenido dinamico: si se cachea llamados rest, si se cachea el resultado y se vuelve escribir hay problema de consistencia, predictabilidad de la cache.. no necesariamente hay tabla de reglas.. si un dato se demora segun x cantdad de tiempo.. invalido... no, hay datos q pueden cambiar tres horas o menos.
+2.1 Varnish:
+Es un acelerador de aplicaciones web, conocido como caché de proxy HTTP inversa. 
+Se instala delante de cualquier servidor HTTP y se configura para almacenar en el caché del servidor una copia del recurso solicitado. 
+* contenido estatico : assets (imagenes, css, assets).
+* contenido dinámico: si se cachea llamados rest, si se cachea el resultado y se vuelve escribir hay problema de consistencia, predictabilidad de la cache.. no necesariamente hay tabla de reglas.. si un dato se demora segun x cantdad de tiempo.. invalido... no, hay datos q pueden cambiar tres horas o menos.
 cual es el patron de lectura?
 cual es el patron de cambio?
 el problema con los cambios, es la predictibilidad.
