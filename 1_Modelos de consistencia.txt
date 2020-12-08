@@ -1,4 +1,4 @@
-MODELOS DE CONSISTENCIA
+MODELOS DE CONSISTENCIA (https://prezi.com/l_ofalrxrbcv/modelos-de-consistencia/)
 
 Cuando se duplican bloques, procesos, etc, esto mejora el rendimiento, pero produce un problema de consistencia entre las diferentes copias cuando sucede una escritura.
 Si al realizar escritura se deben actualizar todas las copias, igual se puede aumentar el tiempo de espera, haciendo que el rendimiento se vea empeorado.
