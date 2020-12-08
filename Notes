@@ -16,16 +16,19 @@ https://devdocs.magento.com/guides/v2.4/performance-best-practices/reference-arc
 2.1 Varnish:
 Es un acelerador de aplicaciones web, conocido como caché de proxy HTTP inversa. 
 Se instala delante de cualquier servidor HTTP y se configura para almacenar en el caché del servidor una copia del recurso solicitado. 
-* contenido estatico : assets (imagenes, css, assets).
-* contenido dinámico: si se cachea llamados rest, si se cachea el resultado y se vuelve escribir hay problema de consistencia, predictabilidad de la cache.. no necesariamente hay tabla de reglas.. si un dato se demora segun x cantdad de tiempo.. invalido... no, hay datos q pueden cambiar tres horas o menos.
+  * contenido estatico : contenido que permanece invariable desde que se crea. No depende de quién lo visualice ni en qué momento se haga. Por ejemplo, un aviso legal, imagenes, css, assets.  
+  * contenido dinámico: contenido que se genera automáticamente en el momento que alguien solicita su visualización, por lo cual, puede cambiar dependiendo de quién lo solicite o en qué momento lo haga. 
+  Por ejemplo, una ficha personal. Si se cachean llamados rest, puede haber un problema, se debe analizar que debe ser cacheado, si se cachea el resultado y se vuelve escribir la fuente, podría haber un problema de consistencia, 
+  será posible saber la predictabilidad de la cache?.. no necesariamente hay tabla de reglas, si un dato se demora segun x cantidad de tiempo, se puede invalidar? hay datos q pueden cambiar tres horas o menos.
+
+Para temas de cache, debemos hacernos algunas preguntas como:
 cual es el patron de lectura?
 cual es el patron de cambio?
-el problema con los cambios, es la predictibilidad.
+si cambia, se puede predecir?
 cual es el ciclo de vida de la cache?
-cachear 
 
-porque no en app service?
-es un paas, quitan customizacion, ellos asumen el runtime, 
+** Porque no es valido tener un varnish en el app service? porque app service es un paas, los cuales restringen cusotmizaciones pero porque ellos mismos las controlan, entonces ellos 
+ya por dentro pueden hacer ese control.
 
 **MODELOS DE CONSISTENCIA**
 **TEORIa de sistemas distribuidos**
