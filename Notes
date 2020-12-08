@@ -3,16 +3,16 @@
 + Restricciones (Negocio y técnicos)
 + Atributos de calidad.
 + Motivadores de negocio. (Resultados deseados del negocio y actividades necesarias para lograrlo)
++ En que se siente comodo el equipo (menor curva de aprendizaje)
++ licenciamiento. (hay algunas q se miden segun el cpu o virtual cpu)
++ estratégia de producto (si se necesitara multiples lineas de un producto, manejo de redespliegue)
++ scriptabilidad (ofrece comandos, permite la automatizacion)
++ desplegabilidad (por ejemplo microservicios, se pueden desplegar separado, resuelve problemas humanos porque menos hay menos conflictos y cada equipo se preocupa de su servicio)
++ pricing.
 
-* en que se siente comodo del equipo (curva de aprendizaje)
-* tipos de licenciamiento. (hay algunas q se miden segun el cpu o virtual cpu)
-* eestrategia de producto (si se necesitara multiples lineas de algo, redespliegue)
-* scriptabilidad (por automatizacion)
-* desplegabilidad (por ejemplo microservicios, se pueden desplegar separado, eresuleve problemas humanos porque menos conflictos)
-* pricing.
+2. Evaluando Magento:
+2.1 Varnish:
 
-
-Varnish:
 -> contenido estatico : assets.
 -> contenido dinamico: si se cachea llamados rest, si se cachea el resultado y se vuelve escribir hay problema de consistencia, predictabilidad de la cache.. no necesariamente hay tabla de reglas.. si un dato se demora segun x cantdad de tiempo.. invalido... no, hay datos q pueden cambiar tres horas o menos.
 cual es el patron de lectura?
